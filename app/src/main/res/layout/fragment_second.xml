@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment"
+    tools:layout_editor_absoluteX="12dp"
+    tools:layout_editor_absoluteY="-13dp">
+
+    <Spinner
+        android:id="@+id/spinner_bt5"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_bt6"
+        app:layout_constraintStart_toEndOf="@+id/spinner_bt4"
+        app:layout_constraintTop_toBottomOf="@+id/keyboardS2" />
+
+    <Spinner
+        android:id="@+id/spinner_bt6"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_bt7"
+        app:layout_constraintTop_toBottomOf="@+id/keyboardS2" />
+
+    <Spinner
+        android:id="@+id/spinner_bt3"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_bt4"
+        app:layout_constraintStart_toEndOf="@+id/spinner_bt2"
+        app:layout_constraintTop_toBottomOf="@+id/keyboardS2" />
+
+    <Spinner
+        android:id="@+id/spinner_bt2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/spinner_bt1"
+        app:layout_constraintTop_toBottomOf="@+id/keyboardS2" />
+
+    <Spinner
+        android:id="@+id/spinner_bt7"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/spinner_bt4"
+        app:layout_constraintTop_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <ImageView
+        android:id="@+id/keyboardS2"
+        android:layout_width="667dp"
+        android:layout_height="145dp"
+        android:contentDescription="keyboard"
+        android:src="@drawable/keyboard"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button_second7"
+        android:layout_width="82dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="VII"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button_second4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <Button
+        android:id="@+id/button_second5"
+        android:layout_width="82dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="8dp"
+        android:text="V"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_second6"
+        app:layout_constraintStart_toEndOf="@+id/button_second4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="82dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="I"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_second4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <Button
+        android:id="@+id/button_second3"
+        android:layout_width="82dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="8dp"
+        android:text="III"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_second4"
+        app:layout_constraintStart_toEndOf="@+id/button_second2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/button_second4"
+        android:layout_width="82dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="8dp"
+        android:text="IV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/button_second2"
+        android:layout_width="82dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="II"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_second"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <Button
+        android:id="@+id/button_second6"
+        android:layout_width="82dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="VI"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_second7"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <Spinner
+        android:id="@+id/spinner_bt4"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/keyboardS2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="731dp"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72">
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner_bt1"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_bt4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <ImageView
+        android:id="@+id/isPlaying_C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginBottom="24dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@android:drawable/ic_notification_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintStart_toStartOf="@+id/keyboardS2" />
+
+    <ImageView
+        android:id="@+id/isPlaying_C_Sharp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="80dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@android:drawable/ic_notification_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintStart_toEndOf="@+id/isPlaying_C" />
+
+    <ImageView
+        android:id="@+id/isPlaying_D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="24dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@android:drawable/ic_notification_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintStart_toEndOf="@+id/isPlaying_C" />
+
+    <ImageView
+        android:id="@+id/isPlaying_D_Sharp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="80dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@android:drawable/ic_notification_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintStart_toEndOf="@+id/isPlaying_D" />
+
+    <ImageView
+        android:id="@+id/isPlaying_E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="24dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@android:drawable/ic_notification_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintStart_toEndOf="@+id/isPlaying_D" />
+
+    <ImageView
+        android:id="@+id/isPlaying_F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="24dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@android:drawable/ic_notification_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintStart_toEndOf="@+id/isPlaying_E" />
+
+    <ImageView
+        android:id="@+id/isPlaying_F_Sharp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="80dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@android:drawable/ic_notification_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintStart_toEndOf="@+id/isPlaying_F" />
+
+    <ImageView
+        android:id="@+id/isPlaying_G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="24dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@android:drawable/ic_notification_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintStart_toEndOf="@+id/isPlaying_F" />
+
+    <ImageView
+        android:id="@+id/isPlaying_G_Sharp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="80dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@android:drawable/ic_notification_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintStart_toEndOf="@+id/isPlaying_G" />
+
+    <ImageView
+        android:id="@+id/isPlaying_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="24dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@android:drawable/ic_notification_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintStart_toEndOf="@+id/isPlaying_G" />
+
+    <ImageView
+        android:id="@+id/isPlaying_A_Sharp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="80dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@android:drawable/ic_notification_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintStart_toEndOf="@+id/isPlaying_A" />
+
+    <ImageView
+        android:id="@+id/isPlaying_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="24dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@android:drawable/ic_notification_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintStart_toEndOf="@+id/isPlaying_A" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
