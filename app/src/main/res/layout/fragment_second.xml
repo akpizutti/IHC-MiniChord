@@ -340,4 +340,79 @@
         app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
         app:layout_constraintStart_toEndOf="@+id/isPlaying_A" />
 
+    <Button
+        android:id="@+id/helpOpenButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="80dp"
+        android:text="\?"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardTextHelp"
+        app:layout_constraintStart_toEndOf="@+id/keyboardTextHelp" />
+
+    <Button
+        android:id="@+id/helpCloseButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="80dp"
+        android:text="X"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintStart_toEndOf="@+id/keyboardTextHelp" />
+
+    <TextView
+        android:id="@+id/keyboardTextHelp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="#66000000"
+        android:gravity="center"
+        android:text="Notes that are part of the chord being played will be highlighted here."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS2"
+        app:layout_constraintEnd_toEndOf="@+id/keyboardS2"
+        app:layout_constraintStart_toStartOf="@+id/keyboardS2"
+        app:layout_constraintTop_toTopOf="@+id/keyboardS2" />
+
+    <TextView
+        android:id="@+id/selectorTextHelp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#66000000"
+        android:gravity="center"
+        android:text="You can change the form of each chord with these selectors."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_bt7"
+        app:layout_constraintStart_toStartOf="@+id/spinner_bt1"
+        app:layout_constraintTop_toBottomOf="@+id/keyboardS2" />
+
+    <TextView
+        android:id="@+id/buttonsTextHelp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#66000000"
+        android:gravity="center"
+        android:text="Each one of these buttons is a chord, click on them to play the respective chord"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/button_second4"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_bt7"
+        app:layout_constraintStart_toStartOf="@+id/spinner_bt1"
+        app:layout_constraintTop_toTopOf="@+id/button_second4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

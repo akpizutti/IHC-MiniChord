@@ -11,20 +11,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.minichord.databinding.FragmentSecondBinding;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import com.example.minichord.Notes;
 
 public class SecondFragment extends Fragment implements AdapterView.OnItemSelectedListener {
 
@@ -60,6 +59,13 @@ public class SecondFragment extends Fragment implements AdapterView.OnItemSelect
     private ImageView isPlaying_A;
     private ImageView isPlaying_A_Sharp;
     private ImageView isPlaying_B;
+
+    private Button helpOpenButton;
+    private Button helpCloseButton;
+
+    private TextView keyboardTextHelp;
+    private TextView selectorTextHelp;
+    private TextView buttonsTextHelp;
 
 
     @Override
@@ -119,6 +125,15 @@ public class SecondFragment extends Fragment implements AdapterView.OnItemSelect
         isPlaying_B = binding.isPlayingB;
 
         setAllKeysOFF();
+
+        helpOpenButton = binding.helpOpenButton;
+        helpCloseButton = binding.helpCloseButton;
+
+        keyboardTextHelp = binding.keyboardTextHelp;
+        selectorTextHelp = binding.selectorTextHelp;
+        buttonsTextHelp = binding.buttonsTextHelp;
+
+        closeHelpOverlay();
 
         Notes.getNotes();
 
@@ -278,7 +293,50 @@ public class SecondFragment extends Fragment implements AdapterView.OnItemSelect
             return false;
         });
 
+        binding.helpOpenButton.setOnTouchListener((v, event) -> {
+            switch(event.getAction()) {
+                case MotionEvent.ACTION_DOWN:
+                    openHelpOverlay();
+                    break;
+                case MotionEvent.ACTION_UP:
+                    v.performClick();
+                case MotionEvent.ACTION_CANCEL:
+                    // RELEASED
+                    break;
+            }
+            return false;
+        });
+
+        binding.helpCloseButton.setOnTouchListener((v, event) -> {
+            switch(event.getAction()) {
+                case MotionEvent.ACTION_DOWN:
+                    closeHelpOverlay();
+                    break;
+                case MotionEvent.ACTION_UP:
+                    v.performClick();
+                case MotionEvent.ACTION_CANCEL:
+                    // RELEASED
+                    break;
+            }
+            return false;
+        });
+
         startEngine();
+    }
+
+    private void openHelpOverlay(){
+        helpCloseButton.setVisibility(View.VISIBLE);
+
+        keyboardTextHelp.setVisibility(View.VISIBLE);
+        selectorTextHelp.setVisibility(View.VISIBLE);
+        buttonsTextHelp.setVisibility(View.VISIBLE);
+    }
+    private void closeHelpOverlay(){
+        helpCloseButton.setVisibility(View.GONE);
+
+        keyboardTextHelp.setVisibility(View.INVISIBLE);
+        selectorTextHelp.setVisibility(View.INVISIBLE);
+        buttonsTextHelp.setVisibility(View.INVISIBLE);
     }
 
     private void setAllKeysOFF(){

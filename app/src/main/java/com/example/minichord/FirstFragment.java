@@ -40,6 +40,7 @@ public class FirstFragment extends Fragment implements AdapterView.OnItemSelecte
     private ImageView isPlaying_A_Sharp;
     private ImageView isPlaying_B;
 
+
     private String selectedScale;
 
 
