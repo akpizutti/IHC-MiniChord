@@ -112,6 +112,12 @@ void Notes::buildChord(int *notes, int root, int voicing) {
         case chordVoicings::MAJ9:
             buildMajor9thChord(notes, root);
             break;
+        case chordVoicings::SUS2:
+            buildSuspended2Chord(notes, root);
+            break;
+        case chordVoicings::SUS4:
+            buildSuspended4Chord(notes, root);
+            break;
     }
     for(int i=0; i<MAX_POLYPHONY; i++)
     {
@@ -177,4 +183,17 @@ void Notes::buildMajor9thChord(int *notes, int root) {
     notes[2] = root + 7;
     notes[3] = root + 11;
     notes[4] = root + 14;
+}
+
+void Notes::buildSuspended2Chord(int* notes, int root){
+    notes[0] = root;
+    notes[1] = root + 2;
+    notes[2] = root + 7;
+}
+
+
+void Notes::buildSuspended4Chord(int* notes, int root){
+    notes[0] = root;
+    notes[1] = root + 5;
+    notes[2] = root + 7;
 }

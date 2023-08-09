@@ -71,7 +71,7 @@ public class SecondFragment extends Fragment implements AdapterView.OnItemSelect
         binding = FragmentSecondBinding.inflate(inflater, container, false);
 
         spinner_bt1 = (Spinner) binding.spinnerBt1;
-        List<String> spinner_bt1Value = new ArrayList<String>(Arrays.asList("Major", "Maj7", "Maj9"));
+        List<String> spinner_bt1Value = new ArrayList<String>(Arrays.asList("Major", "Maj7", "Maj9", "Sus2", "Sus4"));
         spinner_bt1.setAdapter(new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_dropdown_item, spinner_bt1Value));
         spinner_bt1.setOnItemSelectedListener(this);
 
@@ -86,12 +86,12 @@ public class SecondFragment extends Fragment implements AdapterView.OnItemSelect
         spinner_bt3.setOnItemSelectedListener(this);
 
         spinner_bt4 = (Spinner) binding.spinnerBt4;
-        List<String> spinner_bt4Value = new ArrayList<String>(Arrays.asList("Major", "Maj7", "Maj9"));
+        List<String> spinner_bt4Value = new ArrayList<String>(Arrays.asList("Major", "Maj7", "Maj9", "Sus2", "Sus4"));
         spinner_bt4.setAdapter(new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_dropdown_item, spinner_bt4Value));
         spinner_bt4.setOnItemSelectedListener(this);
 
         spinner_bt5 = (Spinner) binding.spinnerBt5;
-        List<String> spinner_bt5Value = new ArrayList<String>(Arrays.asList("Major", "Maj7", "Maj9"));
+        List<String> spinner_bt5Value = new ArrayList<String>(Arrays.asList("Major", "Maj7", "Maj9", "Sus2", "Sus4"));
         spinner_bt5.setAdapter(new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_dropdown_item, spinner_bt5Value));
         spinner_bt5.setOnItemSelectedListener(this);
 

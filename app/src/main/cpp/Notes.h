@@ -112,7 +112,7 @@ class Notes {
 
             //este enum NECESSITA estar EXATAMENTE igual ao declarado na Notes.java
             enum chordVoicings{
-                MAJOR, MINOR, DIM, MAJ7, MIN7, MAJ9
+                MAJOR, MINOR, DIM, MAJ7, MIN7, MAJ9, SUS2, SUS4
             };
             static void buildChords(int degree, int *notes);
             static void buildChord(int *notes, int root, int voicing);
@@ -128,6 +128,8 @@ class Notes {
             static void buildMajor7thChord(int* notes, int root);
             static void buildMajor9thChord(int* notes, int root);
             static void buildMinor7thChord(int* notes, int root);
+            static void buildSuspended2Chord(int* notes, int root);
+            static void buildSuspended4Chord(int* notes, int root);
 
 };
 

@@ -12,7 +12,7 @@ public class Notes {
 
     //este enum NECESSITA estar EXATAMENTE igual ao declarado na Notes.h
     private static enum chordVoicings{
-        MAJOR, MINOR, DIM, MAJ7, MIN7, MAJ9
+        MAJOR, MINOR, DIM, MAJ7, MIN7, MAJ9, SUS2, SUS4
     }
     private static enum normalizedNoteIDs{ //get a note ID by using normalizedNoteIDs.valueOf("NOTE_NAME").ordinal()
         C, C_SHARP, D, D_SHARP, E, F, F_SHARP, G, G_SHARP, A, A_SHARP, B
@@ -111,6 +111,12 @@ public class Notes {
                 break;
             case "Maj9":
                 mode = chordVoicings.valueOf("MAJ9").ordinal();
+                break;
+            case "Sus2":
+                mode = chordVoicings.valueOf("SUS2").ordinal();
+                break;
+            case "Sus4":
+                mode = chordVoicings.valueOf("SUS4").ordinal();
                 break;
         }
         chordModes[degree-1] = mode;
