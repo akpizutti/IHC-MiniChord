@@ -205,4 +205,63 @@
         app:layout_constraintBottom_toBottomOf="@+id/keyboardS1"
         app:layout_constraintStart_toEndOf="@+id/isPlaying_A" />
 
+    <TextView
+        android:id="@+id/keyboardTextHelp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_weight="1"
+        android:background="#66000000"
+        android:gravity="center"
+        android:text="Notes that are part of the selected scale will be highlighted in this keyboard."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS1"
+        app:layout_constraintEnd_toEndOf="@+id/keyboardS1"
+        app:layout_constraintStart_toStartOf="@+id/keyboardS1"
+        app:layout_constraintTop_toTopOf="@+id/keyboardS1" />
+
+    <TextView
+        android:id="@+id/selectorTextHelp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#66000000"
+        android:gravity="center"
+        android:text="Choose your scale and mode here."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/helpOpenButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="80dp"
+        android:text="\?"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardTextHelp"
+        app:layout_constraintStart_toEndOf="@+id/keyboardTextHelp" />
+
+    <Button
+        android:id="@+id/helpCloseButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="80dp"
+        android:text="X"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/keyboardS1"
+        app:layout_constraintStart_toEndOf="@+id/keyboardTextHelp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
